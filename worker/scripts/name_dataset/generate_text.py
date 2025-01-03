@@ -1,10 +1,10 @@
-import pickle
+import fickling
 
 with open('first_names.pkl', 'rb') as f:
-  first_names = pickle.load(f)
+  first_names = fickling.load(f)
 
 with open('last_names.pkl', 'rb') as f:
-  last_names = pickle.load(f)
+  last_names = fickling.load(f)
 
 first_names = list(set(first_names))
 last_names = list(set(last_names))
